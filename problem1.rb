@@ -3,9 +3,12 @@
 
 #Steps:
 #Define a range (1..999)
-#Keep iterating over the variable. 
+#Keep iterating over the variable.
 #Check if the number is divided by 3 or 5, if it is, add to a variable.
 #Display the results.
+
+# Calculate how much time it takes to run the program.
+timer = Time.now
 
 sum = 0 #Store numbers into this variable.
 
@@ -16,4 +19,4 @@ sum = 0 #Store numbers into this variable.
 end
 
 puts "Answer: " + sum.to_s
- 
+puts "Elapsed time: #{(Time.now - timer)*1000} milliseconds"
